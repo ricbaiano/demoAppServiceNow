@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4c14d92393334210038ef7718bba102b" label="Cadastro de produtos" max_length="40" name="x_1460246_contro_0_cadastro_de_produtos" type="collection">
+        <element choice="3" label="Local do estoque" mandatory="true" max_length="40" name="local_do_estoque" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Natal" language="pb" sequence="0" value="natal"/>
+                <element inactive_on_update="false" label="Rio de Janeiro" language="pb" sequence="1" value="rio_de_janeiro"/>
+                <element inactive_on_update="false" label="Sao Paulo" language="pb" sequence="2" value="sao_paulo"/>
+                <element inactive_on_update="false" label="Minas Gerais" language="pb" sequence="3" value="minas_gerais"/>
+            </choice>
+        </element>
+        <element label="Marca" mandatory="true" max_length="100" name="marca" type="string"/>
+        <element label="Nome do produto" mandatory="true" max_length="100" name="nome_do_produto" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Observações" max_length="200" name="observacoes" type="string"/>
+        <element label="Peso" mandatory="true" max_length="40" name="peso" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
